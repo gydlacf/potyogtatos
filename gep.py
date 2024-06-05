@@ -5,8 +5,8 @@ from jatekos import Jatekos
 from random import choice
 
 class Gep(Jatekos):
-    def __init__(self):
-        pass
+    def __init__(self, jatekos):
+        self._jatekos = jatekos
 
     def lep(self, mester):
         lehetosegek = mester.lehetosegek()
@@ -14,3 +14,8 @@ class Gep(Jatekos):
         print(lehetosegek)
 
         return choice(lehetosegek)
+
+    def nyitottkettes(self, mester,
+                      jatekos):
+        pass
+
